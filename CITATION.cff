@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: zenTrade Grid Lab
+message: "If this project helps your research, cite the repository and version."
+type: software
+authors:
+  - name: AYC Fund
+version: 0.1.0
+date-released: 2026-09-22
+url: https://github.com/aycfundteam/zentrade
+license: Apache-2.0

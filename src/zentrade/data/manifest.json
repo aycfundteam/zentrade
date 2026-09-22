@@ -1,0 +1,12 @@
+{
+  "source": "Bybit V5 public market kline endpoint",
+  "endpoint": "/v5/market/kline",
+  "category": "linear",
+  "symbol": "BTCUSDT",
+  "interval": "60",
+  "window_start_utc": "2026-03-06T03:00:00Z",
+  "rows": 504,
+  "sha256": "8fee629f92797aedd7e801f504d164cf5533af741719fda3bac8ddd0e586f016",
+  "retrieved_at_utc": "2026-09-22T14:39:33.784183Z",
+  "window_end_exclusive_utc": "2026-03-27T03:00:00Z"
+}

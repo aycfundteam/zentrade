@@ -1,0 +1,23 @@
+name: Reproducible experiment
+description: Share a result or propose a comparison
+title: "[experiment] "
+labels: [experiment]
+body:
+  - type: input
+    id: dataset
+    attributes:
+      label: Dataset and checksum
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Exact commands
+    validations:
+      required: true
+  - type: textarea
+    id: finding
+    attributes:
+      label: Finding and limitations
+    validations:
+      required: true

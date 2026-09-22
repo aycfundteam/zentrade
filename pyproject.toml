@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "zentrade-grid"
+version = "0.1.0"
+description = "A zero-key, reproducible adaptive-grid research kit"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [{ name = "AYC Fund" }]
+keywords = ["algorithmic-trading", "grid-trading", "backtesting", "bitcoin", "ai-agents"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.12"]
+
+[project.urls]
+Homepage = "https://zentrade.me/?utm_source=github&utm_medium=oss&utm_campaign=zentrade_grid_lab"
+Repository = "https://github.com/aycfundteam/zentrade"
+Issues = "https://github.com/aycfundteam/zentrade/issues"
+
+[project.scripts]
+zentrade = "zentrade.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/zentrade"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
